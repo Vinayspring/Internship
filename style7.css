@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+}
+.nav-container{
+   justify-content:center;
+   font-size:medium;
+   min-height: 1vh;
+    padding: 10px;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-container a{
+    padding: 5px 5px;
+    text-decoration: none;
+    color:white;
+    font:bolder;
+    font-size: 18px;
+}
+.nav-container ul{
+    display: inline-block;
+}
+.nav-container ul li{
+    display: inline;
+    margin: 0 15px;
+}
+.hero{
+    background-image: url(./neww.jpg);
+    height:95vh;
+    background-position:fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+ display:inline-block;
+   justify-content:end;
+   font-size:large;
+   position:fixed;
+   min-height: 10vh;
+   background-size: cover;
+   background-position:right;
+   left: 750px;
+   right: 0px;
+}
+main{
+    display:inline-block;
+    padding:50px;
+    color: rgb(22, 41, 214);
+    font-size: 35px;
+}
+footer {
+    text-align: center;
+    color:white;
+    background-color: #333333;
+    padding: 10px;
+    
+}
+p{
+    left:800px;
+    right:0px;
+    color:rgb(137, 81, 12);
+    display:inline-block;
+   justify-content:end;
+   font-size:large;
+   position:fixed;
+   min-height: 10vh;
+   background-size: cover;
+   background-position:right;
+   font-size: 25px;
+}
+

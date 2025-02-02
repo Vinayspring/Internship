@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info, .contact-form {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        .contact-info p, .contact-form label {
+            font-size: 16px;
+            color: #555;
+        }
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PINNACLE INSTITUTE OF MANAGEMENT AND SCIENCE</h1>
+</header>
+
+<div class="container">
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>If you have any questions or need more information about the sports programs, feel free to reach out to us using the contact details below.</p>
+        <p><strong>Phone:</strong> 9611458021</p>
+        <p><strong>Email:</strong> <a href="infoPims.edu@gmail.com">infoPims.edu@gmail.com</a></p>
+        <p><strong>Office Address:</strong>Nagarbhvai 2nd stage,banglore-560072</p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>

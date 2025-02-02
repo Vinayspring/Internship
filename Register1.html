@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <style>
+    /* General reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input field and select dropdown styling */
+input[type="text"],
+input[type="email"],
+select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Focused input field and select dropdown styling */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Registration</h1>
+    <form action="Register.php" method="post" enctype="multipart/form-data">
+      <label>Username:</label>
+      <input type="text" name="username" required><br><br>
+
+      <label>Phone:</label>
+      <input type="text" name="phone" required><br><br>
+
+      <label>Email:</label>
+      <input type="email" name="email" required><br><br>
+
+      <label>College Name</label>
+      <input type="text"name="college name" required><br><br>
+
+      <label for="sports">sports:</label>
+      <select id="sports" name="sports">
+          <option value="Badminton Doubles">Badminton Doubles</option>
+          <option value="Volleyball">Volleyball</option>
+          <option value="Kabbadi">Kabbadi</option>
+          <option value="cricket">Cricket</option>
+      </select>
+
+      <script>
+          // Function to alert the selected option when the button is clicked
+          function alertSelected() {
+              var selectedSport = document.getElementById('sports').value;
+              alert('You selected: ' + selectedSport);
+          }
+      </script><br>
+  
+  <button type="submit">Submit</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
